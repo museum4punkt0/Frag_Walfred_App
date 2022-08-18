@@ -1,0 +1,59 @@
+  [
+        {
+          "type": "text",
+          "text": "Willkommen im Ozeaneum! Ich bin Walfred und bin dein persönlicher Begleiter"
+        },
+        {
+          "type": "text",
+          "text": "Benötigst du barrierefreie Zugänge (z.B. einen Lift?)",
+          "answers": [
+            {
+              "question": "accessibility",
+              "text": "Ja",
+              "keyword": true
+            },
+            {
+              "question": "accessibility",
+              "text": "Nein",
+              "keyword": false
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Möchtest du an Events erinnert werden? Wenn ja an welche? (Mehrfachauswahl möglich)",
+          "answers": [
+            {
+              "question": "reminder",
+              "text": "Aktionen",
+              "keyword": "aktionen"
+            },
+            {
+              "question": "reminder",
+              "text": "Fütterungen",
+              "keyword": "feeding"
+            },
+            {
+              "question": "reminder",
+              "text": "Vorträge",
+              "keyword": "lecture"
+            },
+            {
+              "question": "reminder",
+              "text": "Erinnerungen",
+              "keyword": "guidedTour"
+            }
+          ],
+          "skip": [
+            {
+              "question": "reminder",
+              "text": "Ich möchte keine Erinnerungen",
+              "keyword": "noReminders"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Das wars, legen wir los"
+        }
+  ]

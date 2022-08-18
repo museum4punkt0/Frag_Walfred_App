@@ -1,0 +1,129 @@
+@orange: #F17C00;
+@orange-dark: #DF6E09;
+
+@blue: #003877;
+@primary: @blue;
+@light-blue: #C8ECF6;
+@barely-white: #EDEDED;
+
+//Useables
+@radius: 12px;
+@letter-spacing: 0.1em;
+@easing-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+/****************************************
+* Breakpoints
+****************************************/
+
+@miniphone: 320px;
+@phone: 481px;
+@tablet: 641px;
+@desktop: 1025px;
+
+
+/****************************************
+* Fonts
+****************************************/
+// Example font face
+@font-face {
+    font-family: "Roboto";
+    src: url('./../../public/assets/fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    line-height: 1em;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./../../public/assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    line-height: 1em;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./../../public/assets/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "RobotoCN";
+    src: url('./../../public/assets/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: 500;
+    line-height: .9em;
+}
+
+
+
+/****************************************
+* Vue Transitions
+****************************************/
+
+.slide-from-bottom-enter-active,
+.slide-from-bottom-leave-active {
+    transition: all 0.3s ease;
+    transform: translate3d(0,0,0);
+}
+
+.slide-from-bottom-leave-from {
+    transition: all 0.3s ease;
+}
+
+.slide-from-bottom-enter-from,
+.slide-from-bottom-leave-to {
+    transition: all 0.3s ease;
+    transform: translate3d(0,50vh,0);
+}
+
+
+.slide-from-total-bottom-enter-active,
+.slide-from-total-bottom-leave-active {
+    transition: all 0.5s ease;
+    transform: translate3d(0,0,0);
+}
+
+.slide-from-total-bottom-leave-from {
+    transition: all 0.5s ease;
+}
+
+.slide-from-total-bottom-enter-from,
+.slide-from-total-bottom-leave-to {
+    transition: all 0.5s ease;
+    transform: translate3d(0,100vh,0);
+}
+
+
+
+.slide-from-left-enter-active,
+.slide-from-left-leave-active {
+    transition: all 0.25s ease;
+}
+
+.slide-from-left-leave-from {
+    transition: all 0.25s ease;
+}
+
+.slide-from-left-enter-from,
+.slide-from-left-leave-to {
+    transition: all 0.25s ease;
+    transform: translate3d(-100vw,0,0);
+}
+
+
+.slide-from-right-enter-active {
+    transition: all 0.25s ease;
+}
+
+.slide-from-right-leave-active {
+    transition: all 0.15s ease;
+}
+
+.slide-from-right-leave-from {
+    transition: all 0.15s ease;
+}
+
+.slide-from-right-enter-from,
+.slide-from-right-leave-to {
+    transition: all 0.25s ease;
+    transform: translate3d(100vw,0,0);
+}

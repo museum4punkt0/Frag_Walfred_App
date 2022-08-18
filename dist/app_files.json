@@ -1,0 +1,84 @@
+{
+  "app_files_hash": "AOWDTOen+SLiq6m3S7VzCQqORA4=",
+  "app_files": [
+    {
+      "url": "assets/fonts/Roboto-Light.ttf",
+      "moddate": "4CrYCHaFXgYLGeKv/Z1jAMqwl9Y=",
+      "is_app_file": "1",
+      "size": 167000
+    },
+    {
+      "url": "assets/fonts/Roboto-Medium.ttf",
+      "moddate": "a/zxsYMMBGcEJE4zsk5YxRd/J8U=",
+      "is_app_file": "1",
+      "size": 168644
+    },
+    {
+      "url": "assets/fonts/Roboto-Regular.ttf",
+      "moddate": "4nKanXZenVMkHBJRby4ikGcS9S4=",
+      "is_app_file": "1",
+      "size": 168260
+    },
+    {
+      "url": "assets/fonts/RobotoCondensed-Bold.ttf",
+      "moddate": "L6XB8fXJsaYjZkXtz7NAn5Si5GE=",
+      "is_app_file": "1",
+      "size": 166340
+    },
+    {
+      "url": "assets/fonts/RobotoCondensed-Regular.ttf",
+      "moddate": "CrYaDvwx0y3S5aVJMZFcZ/Me/xM=",
+      "is_app_file": "1",
+      "size": 166836
+    },
+    {
+      "url": "assets/lottie/walfred-spricht.json",
+      "moddate": "ma/Qr1o9BRvWAYkPZdy8cfHH488=",
+      "is_app_file": "1",
+      "size": 552246
+    },
+    {
+      "url": "assets/Roboto-Light.2835b358.ttf",
+      "moddate": "iisvNly1aTQqHmAmSS0hFE+5Tmg=",
+      "is_app_file": "1",
+      "size": 167000
+    },
+    {
+      "url": "assets/Roboto-Medium.4ac8e036.ttf",
+      "moddate": "S2Oz7rLvw4qoKeXSJffIlKBc34w=",
+      "is_app_file": "1",
+      "size": 168644
+    },
+    {
+      "url": "assets/Roboto-Regular.319cff6e.ttf",
+      "moddate": "bnM+dx3XYlr4wCsO0mGkeYJKknQ=",
+      "is_app_file": "1",
+      "size": 168260
+    },
+    {
+      "url": "assets/RobotoCondensed-Bold.14948aed.ttf",
+      "moddate": "2IaWowml/GOmurHtvLi9DNgUcA0=",
+      "is_app_file": "1",
+      "size": 166340
+    },
+    {
+      "url": "assets/svg/icon-arrow.svg",
+      "moddate": "Zadabu2UAaQ6c/hO8XdHDno0p+0=",
+      "is_app_file": "1",
+      "size": 335
+    },
+    {
+      "url": "assets/svg/walfred-smiles.svg",
+      "moddate": "FXb0cUTWEGACkGJYErP9yqtumwo=",
+      "is_app_file": "1",
+      "size": 12006
+    },
+    {
+      "url": "assets/svg/wave.svg",
+      "moddate": "Umc5kubawUxxtd0gVPyAWrJFz9I=",
+      "is_app_file": "1",
+      "size": 423
+    }
+  ],
+  "app_build_timestamp": "2022-06-01T14:35:34.303Z"
+}

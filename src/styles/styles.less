@@ -1,0 +1,470 @@
+/*************************************************************
+ *
+ * Custom Exhibition CSS
+ * Ozeaneum
+ * @author  isi@fluxguide
+ * ---------------------
+*************************************************************/
+
+@import './reset.less';
+@import './variables.less';
+
+
+/****************************************
+* Breakpoints
+****************************************/
+
+@xs: 350px;
+@sm: 480px;
+@md: 768px;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto';
+}
+
+h1, p, article, button, a {
+	font-family: 'Roboto';
+}
+
+
+/****************************************
+* Typography
+****************************************/
+
+h1 {
+  color: @blue;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-family: "RobotoCN";
+    letter-spacing: 1px;
+    margin: 1rem 0;
+}
+
+p, article {
+  margin: 0;
+  line-height: 140%;
+
+  &.white {
+    color: white;
+  }
+}
+
+
+
+/****************************************
+* Buttons
+****************************************/
+
+.btn.primary {
+  color: white;
+  text-transform: uppercase;
+  padding: .8rem 1.2rem;
+  font-weight: 500;
+  font-family: "RobotoCN";
+  line-height: normal;
+  background: @orange;
+  border-radius: 500px;
+  font-size: .95rem;
+  margin: 1rem auto;
+  display: flex;
+  letter-spacing: @letter-spacing;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+
+  &::before {
+    width: 200px;
+    height: 200px;
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    border-radius: 45%;
+    background-color: @orange-dark;
+    animation: btn-wave 10s linear infinite;
+  }
+}
+
+.btn.secondary {
+  color: white;
+  text-transform: uppercase;
+  padding: .8rem 1.2rem;
+  font-weight: 500;
+  font-family: "RobotoCN";
+  line-height: normal;
+  background: fade(@barely-white,15);
+  border-radius: 500px;
+  font-size: .95rem;
+  margin: 1rem auto;
+  display: flex;
+  letter-spacing: @letter-spacing;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+
+  &::before {
+    width: 200px;
+    height: 200px;
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    border-radius: 45%;
+    background: fade(@barely-white,8);
+    animation: btn-wave 10s linear infinite;
+  }
+}
+
+.btn.textlink {
+  color: white;
+  text-transform: uppercase;
+  padding: .8rem .2rem 0.5rem;
+  font-weight: 500;
+  font-family: "RobotoCN";
+  line-height: normal;
+  font-size: .95rem;
+  margin: 1rem auto;
+  display: flex;
+  letter-spacing: @letter-spacing;
+  border-bottom: 1px solid white;
+}
+
+.btn.wave {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+
+  &:before {
+    width: 200px;
+    height: 200px;
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    border-radius: 45%;
+    background-color: @orange-dark;
+    animation: btn-wave 10s linear infinite;
+  }
+
+  label, svg {
+    position: relative;
+  }
+}
+
+.btn.circle {
+  background: @orange;
+  border-radius: 500px;
+  margin: auto;
+  height: 3rem;
+  width: 3rem;
+  left: 0;
+  right: 0;
+  fill: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    height: 2rem;
+  }
+}
+
+
+/****************************************
+* Chat
+****************************************/
+
+.walfred-spricht {
+  height: 60px;
+  width: 60px;
+  left: 0rem;
+  margin-bottom: -.8rem;
+  position: absolute;
+}
+
+.chat-bubble {
+    background: fade(@blue, 90);
+    padding: .8rem;
+    border-radius: @radius;
+    border-bottom-left-radius: 0;
+    color: white;
+    margin-left: 3rem;
+
+    h3 {
+      color: white;
+    }
+}
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    position: relative;
+}
+
+.wave-bottom-container {
+    position: relative;
+    z-index: 99;
+    margin-top: 1rem;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    opacity: 0.95;
+}
+
+.messages-scroll-viewer {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+.messages {
+  overflow-y: auto;
+  position: relative;
+  transition: all 0.095s ease;
+  padding: 0;
+  top: 0;
+  max-height: 100vh;
+}
+
+.message-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.2rem;
+
+    .message-wrapper {
+      margin-bottom: 0;
+    }
+}
+
+.btn-area {
+  margin-top: 1.5rem;
+ }
+// Answer
+.message-wrapper.answer {
+    justify-content: flex-end;
+    width: 100%;
+
+
+    &.orange .chat-bubble {
+      background: @orange;
+      color: white;
+    }
+
+    &.secondary .chat-bubble {
+      background: fade(@barely-white,15);
+      color: white;
+    }
+
+
+    .chat-bubble {
+        background: white;
+        color: @blue;
+        border-radius: @radius;
+        border-bottom-right-radius: 0;
+        margin-left: 0;
+
+    }
+
+}
+
+
+/****************************************
+* Chat - Typing Indicator
+****************************************/
+
+.typing-bubble span {
+    display: inline-block;
+    margin: 0 0.05rem;
+    animation: animate-typing-indicator 1.2s ease-in-out infinite;
+
+    &:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 0.8s;
+    }    
+}
+
+.fade-in {
+  opacity: 0;
+  pointer-events: none;
+  animation: fade-in .8s linear infinite;
+}
+
+
+
+/****************************************
+* Chat - Answer
+****************************************/
+
+  .wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    animation: wave 5s linear infinite;
+    z-index: -1;
+    color: @blue;
+  }
+  
+  .water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 1px);
+    height: 95%;
+    background: currentColor;
+ 
+     svg {
+      position: absolute;
+      overflow: visible!important;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 99%;
+      height: 9px;
+      fill: currentColor;
+    }
+  }
+  
+  .water:first-of-type {
+    transform: translate(-99%, 0);
+  }
+    
+  @keyframes wave {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(50%, 0.5em, 0);
+    }
+    100% {
+      transform: translate3d(90%, 0, 0);
+    }
+  }
+
+
+/****************************************
+* Onboarding
+****************************************/
+#OnboardingCard {
+  background: @light-blue;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  width: 100vw;
+  overflow: hidden;
+}
+
+.onboarding-head {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 200px;
+  position: relative;
+  padding: 2rem;
+  margin-top: 1rem;
+
+  .textlink {
+    color: @blue;
+    border-color: @blue;
+    margin: 0;
+  }
+
+  svg {
+    position: absolute;
+    right: -2rem;
+    height: 200px;
+  }
+}
+
+.inner-messages {
+  padding: 2rem;
+}
+
+
+/****************************************
+* Animations
+****************************************/
+
+@keyframes fade-in {
+  0% {
+    opacity:0;
+    pointer-events: none;
+  }
+  100% {
+    opacity:1;
+    pointer-events: all;
+  }
+}
+
+@keyframes animate-typing-indicator {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -1px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes btn-wave {
+    0% {
+      transform: translate(-50%,-75%) rotate(0deg);
+    }
+  
+    100% {
+      transform: translate(-50%,-75%) rotate(360deg);
+    }
+  }
+
+  
+
+  @keyframes pulsate-fwd{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+  
+
+  .clippath {
+    pointer-events: none;
+
+  }
+
+  @keyframes marker-bounce {
+    0% {
+    transform:  translate(-50%, -50%) scale(0.3);
+    opacity: 1;
+    }
+    100% {
+    transform:  translate(-50%, -50%) scale(1.3);
+    opacity: 0;
+    }
+}
+
+
+
+
+
+/****************************************
+* Media Queries
+****************************************/
+/* MQ - iPhone 5 Portrait */
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+  }  
+}
