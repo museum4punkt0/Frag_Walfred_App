@@ -2,7 +2,7 @@
 
 
 ## Kurzbeschreibung
-Für das Ozeaneum Stralsund wurde eine App entwickelt, die Navigation und Vermittlung ausgewogen miteinander verbindet. Besucher.innen werden durch Gamification-Elemente aktiviert und entlang digitaler Spots durch das Museum geführt. Begleitet und angeleitet werden die Besucher:innen vom digitalen Avatar Walfred, der auf dialogbasiertes Storytelling setzt.
+Für das Ozeaneum Stralsund wurde eine App entwickelt, die Navigation und Vermittlung ausgewogen miteinander verbindet. Besucher:innen werden durch Gamification-Elemente aktiviert und entlang digitaler Spots durch das Museum geführt. Begleitet und angeleitet werden die Besucher:innen vom digitalen Avatar Walfred, der auf dialogbasiertes Storytelling setzt.
 
 
 ## Entstehungskontext 
