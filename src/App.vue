@@ -152,6 +152,9 @@ import Fish from "../public/assets/svg/fish.svg";
 import FishBadge from "../public/assets/svg/fish-badge.svg";
 
 import jsonConversation from "./jsonConversation.json";
+import { createToaster } from "@meforma/vue-toaster";
+
+
 
 export default {
   components: {
@@ -333,7 +336,8 @@ export default {
       //Finish Onboarding
       this.onboardingIsCompleted = true;
       //DONE -> do your custom logic here
-      console.log("done");
+      const toaster = createToaster({queue:false, maxToasts: false, position: "top", duration: 2000, type: "default" });
+      toaster.show(`Do your logic here.`);
     },
 
     handleButtonClick(answer) {
