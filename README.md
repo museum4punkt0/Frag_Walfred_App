@@ -9,6 +9,13 @@ Für das Ozeaneum Stralsund wurde eine App entwickelt, die Navigation und Vermit
 Die App "Frag Walfred!" ist entstanden im Verbundprojekt museum4punkt0 – Digitale Strategien für das Museum der Zukunft, Teilprojekt [(Digital) MEER erleben]. Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages. Weitere Informationen: www.museum4punkt0.de
 
 
+### Förderhinweis
+Diese App Frag Walfred ist entstanden im Verbundprojekt museum4punkt0 – Digitale Strategien für das Museum der Zukunft, Teilprojekt (Digital) MEER erleben: Vermittlungsformate in und außerhalb der Museen. 
+Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages. </br>
+![BKM-Logo](https://github.com/museum4punkt0/images/blob/2c46af6cb625a2560f39b01ecb8c4c360733811c/BKM_Fz_2017_Web_de.gif)
+![NeustartKultur](https://github.com/museum4punkt0/media_storage/blob/a35eedb36e5b502e90cd76d669a6b337002b230a/BKM_Neustart_Kultur_Wortmarke_pos_RGB_RZ_web.jpg)
+
+
 ## Installation
 Das Frontend der App wurde umgesetzt in einer Vite.js (`https://vitejs.dev/`) Umgebung.  Die Codebasis ist in Vue3 geschrieben.
 Klonen Sie zuerst das Repository auf Ihr lokales System. Wechseln Sie in das Repository und installieren Sie mit `npm` benötigte Pakete.
